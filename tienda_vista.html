@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAMING_NY</title>
+    <link rel="stylesheet" href="tienda_vista.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">STREAMING_NY</h1>
+            <a href="https://wa.me/51950441700?text=Visité%20tu%20página,%20necesito%20más%20información" class="btn-login" target="_blank">CONTACTANOS</a>
+
+
+        </div>
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-slides">
+                <!-- Aquí se cargarán las imágenes del carrusel -->
+            </div>
+            <button class="carousel-arrow prev-arrow" style="display:none;">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+            </button>
+            <button class="carousel-arrow next-arrow" style="display:none;">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="tienda-container">
+        <div class="tienda-header">
+            <h2>Nuestra Tienda</h2>
+            <!-- Puedes eliminar este filtro si no lo necesitas -->
+            <div class="epic-filter-container">
+                <div class="epic-filter-label">
+                    <span class="filter-text">Mostrar todos</span>
+                    <span class="filter-text active">Solo disponibles</span>
+                </div>
+                <div class="epic-filter">
+                    <input type="checkbox" id="stockToggle" class="toggle-checkbox">
+                    <label for="stockToggle" class="toggle-label">
+                        <div class="toggle-ball">
+                            <div class="toggle-ball-pulse"></div>
+                            <div class="toggle-ball-glow"></div>
+                            <span class="available-icon">✓</span>
+                            <span class="unavailable-icon">✗</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="productosContainer" class="productos-container">
+            <!-- Los productos se cargarán aquí -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 STREAMING_NY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="tienda_vista.js"></script>
+</body>
+</html>
