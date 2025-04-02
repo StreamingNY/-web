@@ -5,7 +5,7 @@ window.productosData = [
         nombre: "Netflix STANDARD",
         precio: "18.00",
         precio_renovacion: "18.00",
-        imagen: "productos/NETFLIX_ESTANDAR.PNG", // Asegúrate de que esta ruta sea correcta
+        imagen: "productos/NETFLIX_ESTANDAR.png", // Asegúrate de que esta ruta sea correcta
     },
     {
         id: 2,
