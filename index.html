@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREAMING_NY</title>
+    <link rel="stylesheet" href="tienda_vista.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">STREAMING_NY</h1>
+            <a href="https://wa.me/51961406401" class="btn-login">CONTACTANOS</a>
+        </div>
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-slides"></div>
+            <button class="carousel-arrow prev-arrow">◄</button>
+            <button class="carousel-arrow next-arrow">►</button>
+        </div>
+    </div>
+
+    <div class="tienda-container">
+        <div class="tienda-header">
+            <h2>Nuestra Tienda</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar plataformas...">
+            </div>
+        </div>
+
+        <!-- Promotions Section -->
+        <div class="promotions-section">
+            <h2>Ofertas Destacadas</h2>
+            <div class="productos-grid" id="promotionsGrid"></div>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter-container">
+            <select id="categoryFilter">
+                <option value="all">Todas las Categorías</option>
+                <option value="Mostrar cuentas completas">Mostrar cuentas completas</option>
+                 <option value="Mostrar solo perfiles">Mostrar solo perfiles</option>
+                <option value="Peliculas y Series">Peliculas y Series</option>
+                <option value="Anime">Anime</option>
+                <option value="Plataformas de Música/video"> Plataformas de Música/video</option>
+                <option value="Plataformas de TV en Vivo">Plataformas de TV en Vivo</option>
+                <option value="Productividad / Educación">Productividad / Educación</option>
+                <option value="Investigacion">Investigacion</option>
+                <option value="Servicio redes sociales">Servicio redes sociales</option>
+            </select>
+        </div>
+
+        <div class="productos-container" id="productosContainer">
+            <div class="section-wrapper" id="perfilesSection"></div>
+            <div class="section-wrapper" id="cuentasSection"></div>
+        </div>
+</div>
+
+
+        <div class="modal" id="productModal">
+            <div class="modal-content">
+                <h3 id="modalProductTitle"></h3>
+                <p id="modalProductDescription"></p>
+                <button id="buyButton" class="btn-confirmar">Comprar</button>
+            </div>
+        </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3>Preguntas Frecuentes</h3>
+                <div class="faq-item">
+                    <h4>¿Cómo recibo mis datos de acceso?</h4>
+                    <p>Tras la compra, recibirás un correo y contraseña por WhatsApp.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Qué incluye la garantía de 30 días?</h4>
+                    <p>Reemplazo o soporte técnico si el servicio falla dentro de los 30 días.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Puedo usar el servicio en múltiples dispositivos?</h4>
+                    <p>Depende del producto; revisa la descripción para detalles.</p>
+                </div>
+            </div>
+
+            <!-- Social Media Integration -->
+            <div class="social-media">
+                <a href="https://wa.me/51961406401" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
+                
+                <a href="https://www.facebook.com/share/1EtdRcFwJX/" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+               
+            </div>
+
+            <p>© 2025 STREAMING_NY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="tienda_vista.js"></script>
+</body>
+</html>
